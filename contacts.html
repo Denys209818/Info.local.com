@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Контакти</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/mainIcon.png" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">Головна сторінка</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"><i class="fa fa-home fa-spin"></i>&nbsp;Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/users.html" class="nav-link"><i class="fa fa-phone-square fa-spin"></i>&nbsp;Користувачі</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contacts.html" class="nav-link"><i class="fa fa-telegram fa-spin"></i>&nbsp;Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 offset-md-2 offset-lg-2 col-sm-12">
+                <h3 class="text-center">Подати заявку</h3>
+                <form novalidate id="mainForm">
+                    <div class="form-group">
+                        <h4 class="form-text text-dark">Ім'я</h4>
+                        <input type="text" placeholder="Ім'я" class="form-control" id="txtName" required />
+                        <small><label for="txtName" class="text-muted">Ведіть коректне ім'я</label></small>
+                        <div class="invalid-feedback">
+                            Поле 'ім'я' не може бути пустим!
+                        </div>
+                        <div class="valid-feedback">
+                            Дані введено вірно!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h4 class="form-text text-dark">Номер телефону</h4>
+                        <input type="text" placeholder="Номер телефону" class="form-control" id="txtPhone" required />
+                        <small><label for="txtPhone" class="text-muted">Ведіть коректний номер телефону. +38 (000)-000-00-00</label></small>
+                        <div class="invalid-feedback">
+                            Поле 'Номер телефону' не може бути пустим!
+                        </div>
+                        <div class="valid-feedback">
+                            Дані введено вірно!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h4 class="form-text text-dark">Текст заявки</h4>
+                        <textarea style="resize:none;" id="txtArea" class="form-control" required></textarea>
+                        <small><label for="txtArea" class="text-muted">Ведіть текст заявки</label></small>
+                        <div class="invalid-feedback">
+                            Поле заявки не може бути пустим!
+                        </div>
+                        <div class="valid-feedback">
+                            Дані введено вірно!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" id="agreeCheck" class="custom-control-input" required />
+                            <label for="agreeCheck" class="custom-control-label">Даю згоду на обробку персональних даних!</label>
+                        <div class="invalid-feedback">
+                            Підтвердіть це поле!
+                        </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-success" type="submit" id="btnSend">Відправити заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-backdrop="static" id="infoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Підтвердіть вашу заявку</h3>
+                    <span data-dismiss="modal" class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>Ваше ім'я:&nbsp;<b id="spanName"></b></p>
+                    <p>Ваш номер телефону:&nbsp;<b id="spanPhone"></b></p>
+                    <h5 class="text-center">Ваша заявка</h5>
+                    <div>
+                        <textarea class="text-muted form-control" style="height:150px;" readonly id="paragrafInfo"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer pull-right">
+                    <button class="btn btn-success" id="btnSaveChanges">Відправити</button>
+                    <button class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-backdrop="static" id="modalSuccess">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Інформаційне вікно</h4>
+                    <span data-dismiss="modal" class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center text-warning">Успішно відправлено!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/imask.js"></script>
+    <script src="/js/contacts.js"></script>
+</body>
+</html>

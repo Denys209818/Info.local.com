@@ -1,0 +1,9 @@
+﻿.link-country:hover {
+    color: yellow;
+}
+
+.link-title:hover {
+    color: firebrick;
+    text-decoration:none;
+}
+

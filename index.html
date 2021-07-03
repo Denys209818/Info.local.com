@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Головна сторінка</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/mainIcon.png" />
+    <link href="/css/font-awesome.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/sideBar.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">Головна сторінка</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"><i class="fa fa-home fa-spin"></i>&nbsp;Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/users.html" class="nav-link"><i class="fa fa-phone-square fa-spin"></i>&nbsp;Користувачі</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contacts.html" class="nav-link"><i class="fa fa-telegram fa-spin"></i>&nbsp;Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block">
+                <!--Sidebar-->
+                <div class="sidebar">
+                    <ul class="bg-defoult">
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed active"> <i class="fa fa-th-large"></i> <span class="nav-label">Актуальні</span> <span class="fa fa-chevron-left pull-right"></span> </a>
+                            <ul class="sub-menu collapse show" id="dashboard">
+                                <li class="active"><a href="#">Футбол</a></li>
+                                <li><a href="#">Коронавірус</a></li>
+                                <li><a href="#">Відпочинок</a></li>
+                                <li><a href="#">Ігри та розваги</a></li>
+                                <li><a href="#">Книги</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active"> <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Анонси</span> <span class="fa fa-chevron-left pull-right"></span> </a>
+                            <ul class="sub-menu collapse" id="products">
+                                <li class="active"><a href="#">Матчі України</a></li>
+                                <li><a href="#">Велике будівництво</a></li>
+                                <li><a href="#">МОН</a></li>
+                                <li><a href="#">МОЗ</a></li>
+                                <li><a href="#">Верховна рада</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-laptop"></i> <span class="nav-label">Технічна база</span></a> </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#tables" class="collapsed active"><i class="fa fa-table"></i> <span class="nav-label">Нові проєкти</span><span class="fa fa-chevron-left pull-right"></span></a>
+                            <ul class="sub-menu collapse" id="tables">
+                                <li><a href="">Мандруй Україною</a></li>
+                                <li><a href="">Орел і Решка</a></li>
+                                <li><a href="">Світ навиворіт</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#e-commerce" class="collapsed active"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Комерція</span><span class="fa fa-chevron-left pull-right"></span></a>
+                            <ul class="sub-menu collapse" id="e-commerce">
+                                <li><a href=""> Проєкти</a></li>
+                                <li><a href=""> Новації</a></li>
+                                <li><a href="">Інвестиції</a></li>
+                                <li><a href=""> Витрати</a></li>
+                                <li><a href="">Податки</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href=""><i class="fa fa-pie-chart"></i> <span class="nav-label">Вхід</span> </a></li>
+                        <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Реєстрація</span></a> </li>
+                        <li> <a href="/contacts.html"><i class="fa fa-files-o"></i> <span class="nav-label">Контакти</span></a> </li>
+                        <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Про нас</span></a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12">
+
+
+                <!--Slider-->
+                <div class="carousel slide carousel-fade" id="mainCarousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#mainCarousel" data-slide-to="0"></li>
+                        <li data-slide-to="1" data-target="#mainCarousel"></li>
+                        <li data-slide-to="2" data-target="#mainCarousel"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/slide1.jpg" class="w-100 d-block" alt="Перший слайд" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slide2.jpg" class="w-100 d-block" alt="Другий слайд" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/slide3.png" class="w-100 d-block" alt="Третій слайд" />
+                        </div>
+                    </div>
+
+                    <div class="carousel-control-next" data-slide="next" data-target="#mainCarousel">
+                        <span class="carousel-control-next-icon"></span>
+                    </div>
+                    <div class="carousel-control-prev" data-slide="prev" data-target="#mainCarousel">
+                        <span class="carousel-control-prev-icon"></span>
+                    </div>
+                </div>
+
+                <h2>ГОЛОВНІ НОВИНИ&nbsp; <small><i class="fa fa-circle text-danger"></i></small></h2>
+
+                <div class="row mt-2">
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news1.jpg" height="150" width="200" class="w-100 d-block" alt="Перша новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">США</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                До кінця літа точно: Ілон Маск розповів
+                                                коли Starlink почне роздавати інтернет по всьому світу
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">22:49&nbsp;<i class="fa fa-eye"></i> 1000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news2.jpeg" height="150" width="200" class="w-100 d-block" alt="Друга новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">Україна</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                Повалені дерева, обвалені фасади старих будинків та підтоплений центр:
+                                                Львовом знову пронісся потужний буревій
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">20:43&nbsp;<i class="fa fa-eye"></i> 1411</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news3.jpeg" height="150" width="200" class="w-100 d-block" alt="Третя новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">Україна</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                У Раді приготували нові податки на продаж нерухомості: кому та скільки доведеться платити більше
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">18:49&nbsp;<i class="fa fa-eye"></i> 3961</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="row mt-2">-->
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news4.jpeg" height="150" width="200" class="w-100 d-block" alt="Перша новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">Україна</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                Зміни в Україні від 1 липня: ринок землі,
+                                                прожитковий мінімум та ціни на комунальні послуги
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">14:32&nbsp;<i class="fa fa-eye"></i> 8318</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news5.jpeg" height="150" width="200" class="w-100 d-block" alt="Друга новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">Україна</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                Упав рекорд Платіні: герой збірної України увійшов
+                                                до історії Чемпіонатів Європи
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">01:23&nbsp;<i class="fa fa-eye"></i> 76K</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card">
+                            <img src="/images/news6.jpeg" height="150" width="200" class="w-100 d-block" alt="Третя новина" />
+                            <div class="card-body px-2">
+                                <small class="d-block mb-1 link-country">Україна</small>
+
+                                <span class="card-title">
+                                    <b>
+                                        <a href="/" class="text-dark link-title">
+                                            <span class="link-title">
+                                                Врятувався синьо-жовтим прапором: відео сутички російського провокатора з фанатами збірної України
+                                            </span>
+                                        </a>
+                                    </b>
+                                </span>
+
+                                <span class="d-block text-muted">20:12&nbsp;<i class="fa fa-eye"></i> 74K</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-6 offset-sm-3">
+                        <div class="btn-group mt-5">
+
+                            <a href="" class="btn btn-primary">Назад</a>
+
+                            <a href="" class="btn btn-link">1</a>
+
+                            <a href="" class="btn btn-link">2</a>
+
+                            <a href="" class="btn btn-link">3</a>
+
+                            <a href="" class="btn btn-link">4</a>
+
+                            <a href="" class="btn btn-primary">Вперед</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <footer class="py-3 mt-3 container-fluid bg-dark">
+                <div class="container">
+                    <span><b class="text-secondary"><i class="fa fa-globe"></i>&nbsp;Усі права захищено!</b></span>
+                </div>
+            </footer>
+
+            <script src="/js/jquery-3.5.1.js"></script>
+            <script src="/js/popper.js"></script>
+            <script src="/js/bootstrap.js"></script>
+</body>
+</html>
